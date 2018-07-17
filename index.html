@@ -5,100 +5,66 @@
         <script src='./js/siteopen.js'></script>
 </head>
 
-<body>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Brand/logo -->
-    <a class="navbar-brand" href="#">
-        <img src='./images/Python-User-Group.png'>
-    </a>
-    
-    <!-- Links -->
+<!--Navbar template from https://www.w3schools.com/bootstrap4/bootstrap_scrollspy.asp-->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+        
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+        <a class="navbar-brand" href="#">
+            <img src='./images/Python-User-Group.png' height=50>
+        </a>
     <ul class="navbar-nav">
-        <li class="nav-item">
-        <a class="nav-link" href="#">Link 1</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Link 2</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Link 3</a>
-        </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#section1">Introduction</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#section2">People</a>
+    </li>
     </ul>
 </nav>
-   
+        
+<div class='container'>
 
+    <div id="section1" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <br>
+        <center>
+            <img src='./images/Python-User-Group.png' height=200>
+            <h1>Python User Group</h1> 
+            <p style='margin-top:-20px'>University of Utah &mdash; Department of Atmospheric Sciences</p>
+        </center>    
+        <hr>
+        <p style='text-align: center'>We get together to talk about weather and python
 
-<img src='Python-User-Group.png'>
-
-<div class="container">
-    <h1><i class="fas fa-users"></i> People</h1>
-    <hr>
-    
-    <div class="card-deck">
-        <div class="card" style="width:400px">
-                <img class="card-img-top" src="./images/people/JohnH.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                <h4 class="card-title">John Horel</h4>
-                <p class="card-text">Principal Investigator</p>
-                <p class="card-text">University of Utah Department of Atmospheric Science</p>
+        <div class="row">            
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                    
+                <div class='jumbotron'>
+                    <div>
+                        <h3><i class="fa fa-calendar"></i> Next Meeting</h3>
+                        <address>
+                        <strong>Date: </strong>September ??, 2018<br>
+                        <strong>Time: </strong>?:00-?:00 PM<br>
+                        <strong>Place: </strong>INSCC 445<br>
+                        <strong>Presenter: </strong> Everyone<br>
+                        <strong>Subject: </strong> Get to know you<br>
+                        </address>
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <a href="http://home.chpc.utah.edu/~u0035056/home/" class="btn btn-dark"><i class="fas fa-globe"></i> </a>
-                    <a href="mailto:john.horel@utah.edu" class="btn btn-dark"><i class="fas fa-envelope"></i> </a>
-                </div>
+            </div>
         </div>
-
-        <div class="card" style="width:400px">
-                <img class="card-img-top" src="./images/people/img_avatar1.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                <h4 class="card-title">Robert Ziel</h4>
-                <p class="card-text">Co-Pincipal Investigator</p>
-                <p class="card-text">University of Alaska-Fairbanks</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i></a>
-                    <a href="mailto:#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i></a>
-                </div>
-        </div>
-
-        <div class="card" style="width:400px">
-                <img class="card-img-top" src="./images/people/AdamK.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                <h4 class="card-title">Adam Kochanski</h4>
-                <p class="card-text">Co-Principal Investigator</p>
-                <p class="card-text">University of Utah Department of Atmospheric Science</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i></a>
-                    <a href="mailto:adam.kochanski@utah.edu" class="btn btn-dark"><i class="fas fa-envelope"></i></a>
-                </div>
-        </div>
-
-        <div class="card" style="width:400px">
-                <img class="card-img-top" src="./images/people/ErikC.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                <h4 class="card-title">Erik Crosman</h4>
-                <p class="card-text">Co-Pincipal Investigator</p>
-                <p class="card-text">University of Utah Department of Atmospheric Science</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i></a>
-                    <a href="mailto:erik.crosman@utah.edu" class="btn btn-dark"><i class="fas fa-envelope"></i></a>
-                </div>
-        </div>
-
     </div>
+        
 
-    <br>
-
-    <div class="card-deck">
-            <div class="card" style="width:400px">
+    <div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+            <h1><i class="fas fa-users"></i> People</h1>
+            <hr>
+            
+            <div class="card-deck">
+                <div class="card">
                     <img class="card-img-top" src="./images/people/BrianB.jpg" alt="Card image" style="width:100%">
                     <div class="card-body">
                     <h4 class="card-title">Brian Blaylock</h4>
-                    <p class="card-text">PhD Candidate</p>
-                    <p class="card-text">University of Utah Department of Atmospheric Science</p>
                     </div>
                     <div class="card-footer">
                         <a href="http://home.chpc.utah.edu/~u0553130/Brian_Blaylock/home.html" class="btn btn-dark"><i class="fas fa-globe"></i> </a>
@@ -106,77 +72,165 @@
                         <a href="https://twitter.com/blaylockbk" class="btn btn-dark"><i class="fab fa-twitter"></i></a>
                         <a href="https://github.com/blaylockbk" class="btn btn-dark"><i class="fab fa-github"></i></a>
                     </div>
-            </div>
-    
-            <div class="card" style="width:400px">
+                </div>
+        
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/TomG.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">Tom Gowan</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="mailto:tom.gowan@utah.edu" class="btn btn-dark"><i class="fas fa-envelope"></i> </a>
+                        <a href="https://twitter.com/tommgowan" class="btn btn-dark"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/tomgowan" class="btn btn-dark"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+        
+                <div class="card">
                     <img class="card-img-top" src="./images/people/TaylorM.jpg" alt="Card image" style="width:100%">
                     <div class="card-body">
                     <h4 class="card-title">Taylor McCorkle</h4>
-                    <p class="card-text">PhD Candidate</p>
-                    <p class="card-text">University of Utah Department of Atmospheric Science</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
                         <a href="mailto:taylor.mccorkle@utah.edu" class="btn btn-dark"><i class="fas fa-envelope"></i> </a>
                         <a href="https://twitter.com/taylor_mccorkle" class="btn btn-dark"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github"></i></a>
                     </div>
+                </div>
+        
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/img_avatar1.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">(Name)</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
+                    </div>   
+                </div>
+        
             </div>
-            
-            <div class="card" style="width:400px">
+        
+            <br>
+        
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/img_avatar2.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">(Name)</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
+                    </div>   
+                </div>
+        
+                <div class="card">
                     <img class="card-img-top" src="./images/people/img_avatar3.png" alt="Card image" style="width:100%">
                     <div class="card-body">
-                    <h4 class="card-title">Trevor Alcott</h4>
-                    <p class="card-text">Collaborator</p>
-                    <p class="card-text">NOAA Earth System Research Laboratory</p>
+                    <h4 class="card-title">(Name)</h4>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i></a>
-                        <a href="mailto:#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
                     </div>
+                </div>
+                
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/img_avatar4.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">(Name)</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/img_avatar5.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">(Name)</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
+                    </div>
+                </div>
+        
             </div>
-    
-            <div class="card" style="width:400px">
+        
+            <br>
+        
+            <div class="card-deck">
+                <div class="card"> 
                     <img class="card-img-top" src="./images/people/img_avatar6.png" alt="Card image" style="width:100%">
                     <div class="card-body">
-                    <h4 class="card-title">Heidi Strader</h4>
-                    <p class="card-text">Collaborator</p>
-                    <p class="card-text">National Parks Service</p>
+                    <h4 class="card-title">(Name)</h4>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i></a>
-                        <a href="mailto:#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
                     </div>
-            </div>
-
-    </div>
-
-    <br>
-
-    <div class="card-deck">     
+                </div>
         
-        <div class="card" style="width:400px">
-                <img class="card-img-top" src="./images/people/img_avatar2.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                <h4 class="card-title">Charles Maxwell</h4>
-                <p class="card-text">Collaborator</p>
-                <p class="card-text">Forest Service</p>
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/img_avatar1.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">(Name)</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i></a>
-                    <a href="mailto:#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i></a>
+                
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/img_avatar2.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">(Name)</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
+                    </div>
                 </div>
-        </div>
-
-        <div class="card" style="width:400px"></div>
-        <div class="card" style="width:400px"></div>
-        <div class="card" style="width:400px"></div>
-
+        
+                <div class="card">
+                    <img class="card-img-top" src="./images/people/img_avatar3.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">(Name)</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-globe"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fas fa-envelope"></i> </a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-twitter disabled"></i></a>
+                        <a href="#" class="btn btn-dark disabled"><i class="fab fa-github disabled"></i></a>
+                    </div>
+                </div>
+    
+            </div>
     </div>
-
-
+    
 </div>
-
-
 
 <script src='./js/siteclose.js'></script>
 </body>
