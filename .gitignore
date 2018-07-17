@@ -2,8 +2,6 @@
 Thumbs.db
 
 get_token.py
-*.png
-*.jpg
 *.mov
 *.pyc
 *.out
@@ -17,5 +15,4 @@ get_token.py
 !mesowest20_lg.jpg
 
 # Don't send anything in the directory
-# rclone-beta/
 
