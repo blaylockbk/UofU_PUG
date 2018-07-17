@@ -2,10 +2,7 @@ document.write('\
 <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">\
   <!-- Brand/logo -->\
   <a class="navbar-brand" href="http://www.atmos.utah.edu/">\
-    <img src="images/BlockU.png" alt="logo" style="width:40px;">\
-  </a>\
-  <a class="navbar-brand" href="https://www.firescience.gov/">\
-    <img src="./images/jfsp.png" alt="logo" style="width:40px;">\
+    <img src="./images/BlockU.png" alt="logo" style="width:40px;">\
   </a>\
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">\
     <span class="navbar-toggler-icon"></span>\
